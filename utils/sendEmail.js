@@ -16,7 +16,7 @@ const transporter = nodemailer.createTransport({
 
 
 const sendVerificationEmail = async (email,token) => {
-  const verifyLink = `http://localhost:5000/api/users/verify-email?token=${token}`;
+  const verifyLink = `https://user.dailynewzmail.com/api/users/verify-email?token=${token}`;
    console.log(email)
   const mailOptions = {
     from: process.env.SMTP_MAIL,
